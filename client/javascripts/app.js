@@ -105,7 +105,6 @@ var main = function (toDoObjects) {
     $(".tabs a:first-child span").trigger("click");
 };
 
-
 function displayTodoByTag(toDoObjects){
 
     var tags = [];
