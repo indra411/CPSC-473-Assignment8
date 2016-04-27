@@ -29,7 +29,7 @@ var main = function (toDoObjects) {
                     $content.append($("<li>").text(toDos[i]));
                 }
                 socket.on('newTodo', function(msg){
-                    alert('New reminder is posted!')
+                    alert('New reminder is posted!');
                     $content.prepend($("<li>").text(msg.description));
                 });
 
@@ -39,7 +39,7 @@ var main = function (toDoObjects) {
                     $content.append($("<li>").text(todo));
                 });
                 socket.on('newTodo', function(msg){
-                    alert('New reminder is posted!')
+                    alert('New reminder is posted!');
                     $content.append($("<li>").text(msg.description));
                 });
 
@@ -146,7 +146,7 @@ function displayTodoByTag(toDoObjects){
         $("main .content").append($tagName);
         $("main .content").append($content);
     });
-};
+}
 
 $(document).ready(function () {
     $.getJSON("todos.json", function (toDoObjects) {
